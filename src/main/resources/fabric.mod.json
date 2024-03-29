@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "beta-buddy-mod",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Beta Buddies",
+  "description": "Mod for the Beta Buddies server.",
   "authors": [
-    "Turnip Labs"
+    "Useless"
   ],
   "contact": {
     "homepage": "",
@@ -19,24 +19,24 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"useless.betabuddy.BetaBuddy"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"useless.betabuddy.BetaBuddy"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"useless.betabuddy.BetaBuddy"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"useless.betabuddy.BetaBuddy"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "beta-buddy.mixins.json"
   ],
 
   "depends": {
-		"minecraft": "~7.1-beta.2",
+		"minecraft": "^7.1-beta.2",
     "fabricloader": ">=0.15.5"
   },
   "suggests": {
